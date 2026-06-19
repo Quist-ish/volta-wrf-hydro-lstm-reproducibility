@@ -1,0 +1,5 @@
+Model,Correction type,RMSE,MAE,R2,NSE,KGE,Residual variance,Lag-1 ACF,RMSE reduction (%),Note
+Standalone WRF-Hydro,None,1.411,1.091,0.61,0.574,0.776,1.976,0.394,0.0,Computed from final AMJJASO domain prediction set
+Persistence residual correction,r_hat_t = r_{t-1},1.548,1.105,0.647,0.487,0.717,2.396,-0.483,-9.68,One-step residual persistence; first lagged row excluded
+LR-AR residual correction (p=8),Lagged residuals + Q_WRF(t),1.066,0.799,0.757,0.757,0.816,1.137,0.183,24.44,p=8; ARIMA excluded
+Hybrid WRF-Hydro–LSTM,LSTM residual correction,0.844,0.606,0.851,0.848,0.845,0.712,0.383,40.22,Corrected main-manuscript benchmark-relative value

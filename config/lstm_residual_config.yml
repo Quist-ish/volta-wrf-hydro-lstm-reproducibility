@@ -1,0 +1,22 @@
+lstm_residual_model:
+  role: "additive residual-correction post-processor"
+  residual_target: "r_t = Q_G-RUN(t) - Q_WRF(t)"
+  architecture: "single-layer LSTM"
+  hidden_units: 64
+  lookback_window_days: 30
+  predictors:
+    - precipitation
+    - temperature-related forcing
+    - additional atmospheric variables
+    - WRF-Hydro simulated discharge
+    - lagged hydroclimatic states
+  standardization: "z-score using training-period statistics only"
+  output_layer: "fully connected residual-prediction layer"
+  loss_function: "mean squared error"
+  optimizer: "Adam"
+  learning_rate: 0.001
+  batch_size: 64
+  dropout: 0.2
+  early_stopping: true
+  chronological_split: {training: 0.70, validation: 0.15, testing: 0.15}
+  corrected_discharge: "Q_corr^m(t) = Q_WRF(t) + r_hat_m(t)"

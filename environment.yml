@@ -1,0 +1,26 @@
+name: volta-wrf-lstm-repro
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - xarray
+  - netcdf4
+  - h5py
+  - pyyaml
+  - geopandas
+  - rasterio
+  - rioxarray
+  - shapely
+  - pyproj
+  - jupyterlab
+  - pip
+  - pip:
+      - tensorflow
+      - keras
+      - hydroeval

@@ -1,0 +1,19 @@
+evaluation:
+  streamflow_metrics: [RMSE, MAE, R2, NSE, KGE, PBIAS, residual_variance, lag1_residual_acf]
+  high_flow:
+    q90: {role: "primary high-flow target", wrf_rmse: 2.284, hybrid_rmse: 1.693, reduction_percent: 25.88, criterion: ">=20% achieved"}
+    q95: {role: "extreme-flow sensitivity", wrf_rmse: 2.486, hybrid_rmse: 2.102, reduction_percent: 15.47, criterion: ">=20% not met"}
+  corrected_amjjaso_metrics:
+    wrf: {rmse: 1.411, mae: 1.091, r2: 0.610, nse: 0.574, kge: 0.776}
+    hybrid: {rmse: 0.844, mae: 0.606, r2: 0.851, nse: 0.848, kge: 0.845}
+  spatial_diagnostics:
+    benchmark_mean_flooded_area_km2: 4591
+    wrf_mean_flooded_area_km2: 6200
+    hybrid_mean_flooded_area_km2: 5967
+    wrf_flood_area_rmse_km2: 1680
+    hybrid_flood_area_rmse_km2: 1420
+    wrf_spatial_disagreement: 0.34
+    hybrid_spatial_disagreement: 0.27
+    benchmark_trend_km2_per_year: 46.148
+    wrf_trend_km2_per_year: 65.280
+    hybrid_trend_km2_per_year: 62.678

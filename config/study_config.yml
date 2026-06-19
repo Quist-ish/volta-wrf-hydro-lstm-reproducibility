@@ -1,0 +1,21 @@
+study:
+  title: "Multi-source assessment of a hybrid WRF-Hydro-LSTM residual-correction framework for AMJJASO high-flow reconstruction in the regulated Volta River Basin"
+  basin_context: "Volta River Basin"
+  assessment_domain: "Ghanaian Volta focus domain"
+  analysis_season: "AMJJASO"
+  amjjaso_months: [4, 5, 6, 7, 8, 9, 10]
+  modelling_grid_degrees: 0.05
+  stated_simulation_period: "1974-2024"
+  benchmark: "G-RUN ENSEMBLE runoff/reanalysis benchmark"
+  evidence_hierarchy:
+    grun: "residual construction and benchmark-relative comparison only"
+    grdc: "gauge-based discharge evidence where available"
+    glofas: "external post-2019 daily discharge reference"
+    global_flood_database: "historical satellite flood-event evidence"
+    jrc_global_surface_water: "permanent-water mask"
+    sentinel_1: "SAR-supported spatial flood evidence"
+interpretation_guardrails:
+  - "Do not describe G-RUN as observed discharge."
+  - "Do not describe G-RUN as independent validation."
+  - "Do not describe LSTM as replacing WRF-Hydro."
+  - "Do not describe spatial diagnostics as full hydraulic inundation validation."

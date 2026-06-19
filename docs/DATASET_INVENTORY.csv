@@ -1,0 +1,15 @@
+dataset,category,spatial_resolution,temporal_resolution_or_coverage,purpose,license_or_sharing_note,repository_note
+CHIRPS v2.0,Precipitation forcing,0.05 degrees,Daily,Primary rainfall forcing for WRF-Hydro simulation,Public source; license/provider rules apply,raw not redistributed by default
+ERA5 reanalysis,Atmospheric forcing,~0.25 degrees resampled to 0.05 degrees,Hourly aggregated to daily,"Temperature, radiation, humidity, wind and pressure forcing",Copernicus/provider rules apply,provide download/processing script if possible
+HydroSHEDS / SRTM,DEM and drainage,~90 m aggregated to 0.05 degrees,Static,"Flow direction, flow accumulation, drainage-network structure and terrain controls",source license applies,raw not redistributed by default
+Landsat-derived products,Land cover,~30 m aggregated to 0.05 degrees,Annual/static representation,"Vegetation, surface roughness, land-surface parameterization",source license applies,document product/version
+HWSD v2.0,Soil properties,~1 km aggregated to 0.05 degrees,Static,"Soil texture, infiltration, subsurface-storage representation",source license applies,document product/version
+G-RUN ENSEMBLE,Runoff/reanalysis benchmark,0.5 degrees mapped to 0.05 degree model grid,historical runoff/reanalysis period,Residual construction and benchmark-relative comparison only,not observed discharge,do not call independent validation
+GRDC station records,Gauge-based discharge evidence,station locations,historical station-specific records,Discharge assessment where gauge data are available,GRDC restrictions may apply,share derived statistics/metadata if raw data restricted
+GloFAS v4 consolidated historical discharge,External discharge reference,0.05 degrees,daily 2020-2024 subset,Post-2019 daily river-discharge assessment and high-flow comparison,Copernicus terms apply,share processing script/derived statistics
+Global Flood Database,Historical satellite flood evidence,MODIS event maps,2000-2018 flood events,Satellite-supported flood-event extent and duration evidence,public/source rules apply,processed event statistics included if allowed
+JRC Global Surface Water,Permanent-water mask,30 m,long-term surface-water occurrence/seasonality,Lake Volta and perennial-water exclusion before event flood-area interpretation,public/source rules apply,processed water-area stats included
+Sentinel-1 GRD,Recent SAR flood evidence,~10 m SAR backscatter,event/wet-season composites,Cloud-independent SAR-supported spatial flood evidence,ESA/Copernicus terms apply,share event IDs/scripts if raw data restricted
+amjjaso_predictions.csv,Processed domain-level prediction series,domain time series,AMJJASO rows,Reproduces streamflow metrics and figures,author-generated derivative,included if available
+lstm_training_history_for_Fig_S2.csv,LSTM training history,epoch table,training epochs,Reproduces Fig. S2,author-generated derivative,include after training
+Table_S3_domain_based_AMJJASO_residual_baseline_populated.csv,Processed residual-baseline metrics,table,held-out AMJJASO test period,Reproduces Table S3,author-generated derivative,included if available

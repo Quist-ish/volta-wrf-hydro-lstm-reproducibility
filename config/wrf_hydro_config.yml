@@ -1,0 +1,15 @@
+wrf_hydro:
+  simulation_mode: "standalone uncoupled WRF-Hydro"
+  land_surface_model: "Noah-MP"
+  routing_scheme: "diffusive-wave channel routing"
+  routing_grid_resolution: "0.05 degrees (~5 km)"
+  forcing:
+    precipitation: "CHIRPS v2.0 daily precipitation"
+    atmospheric: "ERA5-derived atmospheric variables aggregated to daily"
+  physiographic_inputs:
+    dem_and_drainage: "HydroSHEDS/SRTM"
+    land_cover: "Landsat-derived land-cover products"
+    soil_properties: "HWSD v2.0"
+  spinup: "one year"
+  output_variable: "daily WRF-Hydro discharge"
+  parameterization_strategy: "physically constrained parameter ranges; no claim of full calibration"
