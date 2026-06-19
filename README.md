@@ -70,3 +70,4 @@ python scripts/05_export_zenodo_manifest.py
 - `outputs/tables/Table_S3_domain_based_AMJJASO_residual_baseline_populated.csv`
 
 Third-party raw source data should be downloaded from the official providers according to their licensing terms unless redistribution is permitted.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20762197.svg)](https://doi.org/10.5281/zenodo.20762197)
