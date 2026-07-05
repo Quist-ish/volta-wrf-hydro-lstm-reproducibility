@@ -85,4 +85,11 @@ Citation
 
 If you use this reproducibility package, please cite:
 
-Quist, I., Bi, S., Yeboah, E., Sarfo, I., Owusu, A. B., Mensah, A. O. K. N., Evi, M., & Quist, B. N. Y. (2026). Reproducibility package for a hybrid WRF-Hydro-LSTM residual-correction framework in the Volta River Basin (Version v1.0.1). Zenodo. https://doi.org/10.5281/zenodo.20762197
+Quist, I., Bi, S., Yeboah, E., Sarfo, I., Owusu, A. B., Mensah, A. O. K. N., Evi, M., & Quist, B. N. Y. (2026). 
+Reproducibility package for a hybrid WRF-Hydro-LSTM residual-correction framework in the Volta River Basin (Version v1.0.1). Zenodo. https://doi.org/10.5281/zenodo.20762197
+
+## Data and licensing note
+
+This repository provides scripts, configuration files, processed derivative outputs, evaluation tables, and documentation needed to reproduce the analysis. Third-party raw datasets are not redistributed unless permitted by the original data providers. Users should download CHIRPS, ERA5, G-RUN ENSEMBLE, GRDC, GloFAS, Global Flood Database, JRC Global Surface Water, Sentinel-1 GRD, HydroSHEDS/SRTM, land-cover products, and HWSD soil data from their official repositories and comply with their licenses, citation requirements, and access conditions.
+
+G-RUN ENSEMBLE is used only as a runoff/reanalysis benchmark for residual construction and benchmark-relative comparison. It is not observed discharge, ground truth, or independent validation. GRDC, GloFAS, Global Flood Database, JRC Global Surface Water, and Sentinel-1 products are used as separate discharge or spatial diagnostic evidence streams.
