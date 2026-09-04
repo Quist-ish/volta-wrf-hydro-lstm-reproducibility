@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this reproducibility package, please cite the associated manuscript and Zenodo archive."
-title: "Reproducibility package for a hybrid WRF-Hydro-LSTM residual-correction framework in the Volta River Basin"
+title: "Reproducibility package for the benchmark-relative WRF-Hydro-LSTM residual-correction framework in the Volta River Basin"
 authors:
   - family-names: "Quist"
     given-names: "Ishmeal"
@@ -16,10 +16,28 @@ authors:
     given-names: "Augustine O. K. N."
   - family-names: "Evi"
     given-names: "Millicent"
+  - family-names: "Shwe"
+    given-names: "Myint Myint"
+  - family-names: "Darko"
+    given-names: "George"
+  - family-names: "Oduro"
+    given-names: "Collins"
   - family-names: "Quist"
     given-names: "Benjamin Nana Yaw"
-version: "1.0.0"
-date-released: "2026-06-19"
+version: "v1.2 editor-ready update"
+date-released: "2026-09-04"
 license: "MIT"
-repository-code: "https://github.com/REPLACE_WITH_OWNER/volta-wrf-hydro-lstm-reproducibility"
-doi: "10.5281/zenodo.REPLACE_WITH_DOI"
+repository-code: "https://github.com/Quist-ish/volta-wrf-hydro-lstm-reproducibility"
+doi: "10.5281/zenodo.22285366"
+url: "https://zenodo.org/records/22285366"
+keywords:
+  - WRF-Hydro
+  - LSTM
+  - hydrological modelling
+  - residual correction
+  - flood diagnostics
+  - G-RUN ENSEMBLE
+  - Volta River Basin
+  - benchmark-relative evaluation
+  - SDG 13
+  - reproducibility package
