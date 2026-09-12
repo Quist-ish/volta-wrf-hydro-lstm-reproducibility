@@ -108,3 +108,7 @@ Scripts, configuration files, documentation, and derivative reproducibility mate
 If you use this reproducibility package, please cite the Zenodo archive:
 
 Quist, I., Bi, S., Yeboah, E., Sarfo, I., Owusu, A. B., Mensah, A. O. K. N., Evi, M., Shwe, M. M., Darko, G., Oduro, C., & Quist, B. N. Y. (2026). *Reproducibility package for the benchmark-relative WRF-Hydro–LSTM residual-correction framework in the Volta River Basin* (Version v1.2 editor-ready update). Zenodo. https://doi.org/10.5281/zenodo.22285366
+
+## Funding
+
+This research was supported by the National Natural Science Foundation of China under Grant/Award Nos. **41971340** and **41271410**.
